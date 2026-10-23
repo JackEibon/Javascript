@@ -63,6 +63,12 @@ const platos = [
         pedidos: 15,
         precio: 35,
         disponible: true
+    },
+    {
+        nombre: "plato vacio",
+        pedidos: 0,
+        precio: 0,
+        disponible: true
     }
 ];
 
@@ -79,12 +85,22 @@ const ordenados = [...platos].sort(
     (a, b) => a.precio - b.precio
 );
 
+const primerIngrediente = platos[5].ingredientes?.[0];
+
+
+console.log({"primer ingrediente:": primerIngrediente });
+
+let ingredienteslist = platos.map(
+    p => p.ingredientes ?? []
+);
+
+console.log(ingredienteslist);
 
 console.log({"original:": platos });
 
 console.log({"filtrados:": filtrados });
 
-console.log({"total:":total});
+console.log({  "total:":total});
 
 console.log({"promedio:":promedio });
 
