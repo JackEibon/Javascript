@@ -17,10 +17,8 @@ let flag= true;
         if (isNaN(n)){
         console.warn("n es NaN")
         return "ese tal vez no sea un numero";}
-    if (!(n%1===0)){
-        return "ese no es un numero entero";}
-    if ((n===0)){
-        return "ese numero ES 0 o escribiste nada";}
+    if (!(n%1===0)){return "ese no es un numero entero";}
+    if ((n===0)){return "ese numero ES 0 o escribiste nada";}
     if ((n<1)){return "ese numero no es mayor de 0";}
     
 
